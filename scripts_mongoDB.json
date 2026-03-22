@@ -1,0 +1,77 @@
+// modelagem embeeded
+
+{ //document dentro da collection curso
+ "_id": {
+ "$oid": "69bb17ddafad42f7f57d2e5a"
+ },
+ "nome": "Redes",
+ "professor": {
+ "nome": "João",
+ "departamento": "Computação"
+ }
+}
+
+// modelagem Referência
+
+{ //document dentro da collection curso
+ "_id": {
+ "$oid": "69bb17ddafad42f7f57d2e5a"
+ },
+ "nome": "Redes",
+ "professor":
+{"$oid":"69bb150cafad42f7f57d2e42"}
+}//Pode ser uma lista tbm
+
+// Dinâmica Netflix
+// Cada grupo deve modelar o banco de uma Netflix, para isto definir:
+// 1. Como armazenar usuários.
+{
+  "_id": { "$oid": "unique_user_id" },
+  "nome": "João Silva",
+  "email": "joao.silva@email.com",
+  "senha": "hashed_password",
+  "data_nascimento": "1990-05-15",
+  "endereco": {
+    "rua": "Rua das Flores",
+    "numero": 123,
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "cep": "12345-678"
+  },
+  "preferencias": ["Ação", "Comédia", "Drama"],
+  "data_criacao": { "$date": "2026-03-22T10:00:00Z" }
+}
+// 2. Como armazenar filmes.
+{
+  "_id": { "$oid": "unique_movie_id" },
+  "titulo": "Inception",
+  "genero": "Ficção Científica",
+  "ano_lancamento": 2010,
+  "classificacao": "14+",
+  "duracao_minutos": 148
+}
+// 3. Como armazenar histórico.
+{
+  "_id": { "$oid": "unique_user_id" },
+  "nome": "João Silva",
+  "historico": [
+    {
+      "filme_id": { "$oid": "unique_movie_id_1" },
+      "titulo": "Inception",
+      "data_visualizacao": { "$date": "2026-03-20T18:30:00Z" },
+      "tempo_assistido_minutos": 148
+    },
+    {
+      "filme_id": { "$oid": "unique_movie_id_2" },
+      "titulo": "Matrix",
+      "data_visualizacao": { "$date": "2026-03-21T20:00:00Z" },
+      "tempo_assistido_minutos": 120
+    }
+  ]
+}
+// 4. Tipo de banco.
+Documento
+// 5. Estrutura dos dados.
+Formato Json
+// 6. Escolha CAP.
+Escolha sera a CA, pois a disponibilidade é essencial para um serviço de streaming, enquanto a consistência pode ser eventual, permitindo que os usuários acessem o conteúdo mesmo durante falhas temporárias.
