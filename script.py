@@ -73,7 +73,13 @@ for i in range(1, 1000001):
 
 for produto in lista_produtos:
 
-    produto["avaliacao"] = random.randrange(6)
+    for i in range(random.randint(1, 5)):
+        avaliacao = {
+            "usuario": random.choice(lista_usuarios),
+            "nota": random.randrange(6),
+            "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+        produto["avaliacao"].append(avaliacao)
 
 #print(lista_produtos)
 
