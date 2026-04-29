@@ -69,7 +69,7 @@ for i in range(1, 1000001):
     lista_produtos.append(produto)
 
 #print(lista_produtos)
-# 3. Gerar avaliações e colocar dentro do produtos aplicando Embedding.
+# 3. Gerar avaliações(outro objeto/collection) e colocar dentro do produtos aplicando Embedding.
 
 for produto in lista_produtos:
 
