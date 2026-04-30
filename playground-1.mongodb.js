@@ -10,34 +10,26 @@
 // https://www.mongodb.com/docs/mongodb-vscode/playgrounds/
 
 // Select the database to use.
-use('LojaDB');
+use('test');
 
-// Insert a few documents into the sales collection.
-db.getCollection('sales').insertMany([
-  { 'item': 'abc', 'price': 10, 'quantity': 2, 'date': new Date('2014-03-01T08:00:00Z') },
-  { 'item': 'jkl', 'price': 20, 'quantity': 1, 'date': new Date('2014-03-01T09:00:00Z') },
-  { 'item': 'xyz', 'price': 5, 'quantity': 10, 'date': new Date('2014-03-15T09:00:00Z') },
-  { 'item': 'xyz', 'price': 5, 'quantity': 20, 'date': new Date('2014-04-04T11:21:39.736Z') },
-  { 'item': 'abc', 'price': 10, 'quantity': 10, 'date': new Date('2014-04-04T21:23:13.331Z') },
-  { 'item': 'def', 'price': 7.5, 'quantity': 5, 'date': new Date('2015-06-04T05:08:13Z') },
-  { 'item': 'def', 'price': 7.5, 'quantity': 10, 'date': new Date('2015-09-10T08:43:00Z') },
-  { 'item': 'abc', 'price': 10, 'quantity': 5, 'date': new Date('2016-02-06T20:20:13Z') },
-]);
+db.getCollection('produtos').insertOne(
+  { 'nome': 'bola', 'categoria': "esporte", 'quantidade': 2, 'preco': 10, 'estoque': 5 }
+);
 
-// Run a find command to view items sold on April 4th, 2014.
-const salesOnApril4th = db.getCollection('sales').find({
-  date: { $gte: new Date('2014-04-04'), $lt: new Date('2014-04-05') }
-}).count();
+db.getCollection('produtos').find();
 
-// Print a message to the output window.
-console.log(`${salesOnApril4th} sales occurred in 2014.`);
+db.getCollection('produtos').find({"nome":"bola"});
 
-// Here we run an aggregation and open a cursor to the results.
-// Use '.toArray()' to exhaust the cursor to return the whole result set.
-// You can use '.hasNext()/.next()' to iterate through the cursor page by page.
-db.getCollection('sales').aggregate([
-  // Find all of the sales that occurred in 2014.
-  { $match: { date: { $gte: new Date('2014-01-01'), $lt: new Date('2015-01-01') } } },
-  // Group the total sales for each product.
-  { $group: { _id: '$item', totalSaleAmount: { $sum: { $multiply: [ '$price', '$quantity' ] } } } }
-]);
+db.getCollection('produtos').find({"estoque": {$gt:2}});
+
+db.getCollection('produtos').updateOne(
+  { 'nome': 'bola' },
+  { $set: { 'estoque': 10 } }
+);
+
+db.getCollection('produtos').updateOne(
+  { 'nome': 'bola' },
+  { $set: { 'preco': 200 } }
+)
+
+db.getCollection('produtos').deleteOne({ 'nome': 'bola' });

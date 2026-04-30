@@ -1,0 +1,2162 @@
+// Sistema de Produtos
+
+// Criar o banco de dados Produto
+use('produto');
+
+// 1. Inserir pelo menos 100 produtos em uma collection de vendas.
+use('produto');
+db.getCollection('lojinha').insertMany([
+    {
+        "nome": "Corsair iCUE 4000X RGB Case",
+        "preco": 30,
+        "categoria": "Roupas",
+        "estoque": 73,
+        "avaliacao": [
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 30,
+        "avaliacao": [
+            {
+                "usuario": "Baldasso",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "NZXT H510 Mid Tower Case",
+        "preco": 1000,
+        "categoria": "Moveis",
+        "estoque": 43,
+        "avaliacao": [
+            {
+                "usuario": "Alan Patrick",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Logitech G Pro X Superlight Wireless Mouse",
+        "preco": 50,
+        "categoria": "Perifericos",
+        "estoque": 11,
+        "avaliacao": [
+            {
+                "usuario": "Adalberto",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 116,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 50,
+        "avaliacao": [
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 20,
+        "avaliacao": [
+            {
+                "usuario": "Mariana",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair Vengeance RGB Pro 32GB DDR4 RAM",
+        "preco": 75,
+        "categoria": "Esportes",
+        "estoque": 46,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "LG UltraGear 34GP83A-B Ultrawide Monitor",
+        "preco": 800,
+        "categoria": "Escritorio",
+        "estoque": 147,
+        "avaliacao": [
+            {
+                "usuario": "Adalberto",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Kingston Fury Beast 16GB DDR4 RAM",
+        "preco": 80,
+        "categoria": "Saude",
+        "estoque": 32,
+        "avaliacao": [
+            {
+                "usuario": "Gustavo",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 182,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Gustavo",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Kingston Fury Beast 16GB DDR4 RAM",
+        "preco": 80,
+        "categoria": "Saude",
+        "estoque": 35,
+        "avaliacao": [
+            {
+                "usuario": "Adalberto",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Razer DeathAdder V3 Pro Mouse",
+        "preco": 100,
+        "categoria": "Tecnologia",
+        "estoque": 163,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Logitech G Pro X Superlight Wireless Mouse",
+        "preco": 50,
+        "categoria": "Perifericos",
+        "estoque": 61,
+        "avaliacao": [
+            {
+                "usuario": "Bruna",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "LG UltraGear 34GP83A-B Ultrawide Monitor",
+        "preco": 800,
+        "categoria": "Escritorio",
+        "estoque": 83,
+        "avaliacao": [
+            {
+                "usuario": "Ferraz",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "NZXT H510 Mid Tower Case",
+        "preco": 1000,
+        "categoria": "Moveis",
+        "estoque": 197,
+        "avaliacao": [
+            {
+                "usuario": "Bruna",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "HyperX Alloy Origins Core Mechanical Keyboard",
+        "preco": 300,
+        "categoria": "Limpeza",
+        "estoque": 90,
+        "avaliacao": [
+            {
+                "usuario": "Adalberto",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Gustavo",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "HyperX Alloy Origins Core Mechanical Keyboard",
+        "preco": 300,
+        "categoria": "Limpeza",
+        "estoque": 9,
+        "avaliacao": [
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Kingston Fury Beast 16GB DDR4 RAM",
+        "preco": 80,
+        "categoria": "Saude",
+        "estoque": 52,
+        "avaliacao": [
+            {
+                "usuario": "Alan Patrick",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "LG UltraGear 34GP83A-B Ultrawide Monitor",
+        "preco": 800,
+        "categoria": "Escritorio",
+        "estoque": 139,
+        "avaliacao": [
+            {
+                "usuario": "Adalberto",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "NZXT H510 Mid Tower Case",
+        "preco": 1000,
+        "categoria": "Moveis",
+        "estoque": 86,
+        "avaliacao": [
+            {
+                "usuario": "Daniela",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 66,
+        "avaliacao": [
+            {
+                "usuario": "Gustavo",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "HyperX Alloy Origins Core Mechanical Keyboard",
+        "preco": 300,
+        "categoria": "Limpeza",
+        "estoque": 104,
+        "avaliacao": [
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair iCUE 4000X RGB Case",
+        "preco": 30,
+        "categoria": "Roupas",
+        "estoque": 144,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "NZXT H510 Mid Tower Case",
+        "preco": 1000,
+        "categoria": "Moveis",
+        "estoque": 26,
+        "avaliacao": [
+            {
+                "usuario": "Baldasso",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair iCUE 4000X RGB Case",
+        "preco": 30,
+        "categoria": "Roupas",
+        "estoque": 98,
+        "avaliacao": [
+            {
+                "usuario": "Daniela",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 159,
+        "avaliacao": [
+            {
+                "usuario": "Bruna",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Razer DeathAdder V3 Pro Mouse",
+        "preco": 100,
+        "categoria": "Tecnologia",
+        "estoque": 7,
+        "avaliacao": [
+            {
+                "usuario": "Baldasso",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Logitech G Pro X Superlight Wireless Mouse",
+        "preco": 50,
+        "categoria": "Perifericos",
+        "estoque": 81,
+        "avaliacao": [
+            {
+                "usuario": "Bruna",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair Vengeance RGB Pro 32GB DDR4 RAM",
+        "preco": 75,
+        "categoria": "Esportes",
+        "estoque": 22,
+        "avaliacao": [
+            {
+                "usuario": "Mariana",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Gustavo",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "LG UltraGear 34GP83A-B Ultrawide Monitor",
+        "preco": 800,
+        "categoria": "Escritorio",
+        "estoque": 46,
+        "avaliacao": [
+            {
+                "usuario": "Adalberto",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Logitech G Pro X Superlight Wireless Mouse",
+        "preco": 50,
+        "categoria": "Perifericos",
+        "estoque": 79,
+        "avaliacao": [
+            {
+                "usuario": "Daniela",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Logitech G Pro X Superlight Wireless Mouse",
+        "preco": 50,
+        "categoria": "Perifericos",
+        "estoque": 75,
+        "avaliacao": [
+            {
+                "usuario": "Mariana",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Kingston Fury Beast 16GB DDR4 RAM",
+        "preco": 80,
+        "categoria": "Saude",
+        "estoque": 175,
+        "avaliacao": [
+            {
+                "usuario": "Daniela",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair iCUE 4000X RGB Case",
+        "preco": 30,
+        "categoria": "Roupas",
+        "estoque": 74,
+        "avaliacao": [
+            {
+                "usuario": "Ferraz",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "NZXT H510 Mid Tower Case",
+        "preco": 1000,
+        "categoria": "Moveis",
+        "estoque": 190,
+        "avaliacao": [
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "LG UltraGear 34GP83A-B Ultrawide Monitor",
+        "preco": 800,
+        "categoria": "Escritorio",
+        "estoque": 142,
+        "avaliacao": [
+            {
+                "usuario": "Daniela",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Gustavo",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair Vengeance RGB Pro 32GB DDR4 RAM",
+        "preco": 75,
+        "categoria": "Esportes",
+        "estoque": 42,
+        "avaliacao": [
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "NZXT H510 Mid Tower Case",
+        "preco": 1000,
+        "categoria": "Moveis",
+        "estoque": 149,
+        "avaliacao": [
+            {
+                "usuario": "Mariana",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 140,
+        "avaliacao": [
+            {
+                "usuario": "Bruna",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Gustavo",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Kingston Fury Beast 16GB DDR4 RAM",
+        "preco": 80,
+        "categoria": "Saude",
+        "estoque": 85,
+        "avaliacao": [
+            {
+                "usuario": "Alan Patrick",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Samsung Odyssey G7 27-inch Gaming Monitor",
+        "preco": 500,
+        "categoria": "Pet",
+        "estoque": 184,
+        "avaliacao": [
+            {
+                "usuario": "Ferraz",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair iCUE 4000X RGB Case",
+        "preco": 30,
+        "categoria": "Roupas",
+        "estoque": 15,
+        "avaliacao": [
+            {
+                "usuario": "Alan Patrick",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "NZXT H510 Mid Tower Case",
+        "preco": 1000,
+        "categoria": "Moveis",
+        "estoque": 133,
+        "avaliacao": [
+            {
+                "usuario": "Baldasso",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Logitech G Pro X Superlight Wireless Mouse",
+        "preco": 50,
+        "categoria": "Perifericos",
+        "estoque": 155,
+        "avaliacao": [
+            {
+                "usuario": "Baldasso",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 18,
+        "avaliacao": [
+            {
+                "usuario": "Mariana",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "LG UltraGear 34GP83A-B Ultrawide Monitor",
+        "preco": 800,
+        "categoria": "Escritorio",
+        "estoque": 9,
+        "avaliacao": [
+            {
+                "usuario": "Daniela",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair Vengeance RGB Pro 32GB DDR4 RAM",
+        "preco": 75,
+        "categoria": "Esportes",
+        "estoque": 56,
+        "avaliacao": [
+            {
+                "usuario": "Mariana",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Razer DeathAdder V3 Pro Mouse",
+        "preco": 100,
+        "categoria": "Tecnologia",
+        "estoque": 82,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "NZXT H510 Mid Tower Case",
+        "preco": 1000,
+        "categoria": "Moveis",
+        "estoque": 89,
+        "avaliacao": [
+            {
+                "usuario": "Mariana",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair iCUE 4000X RGB Case",
+        "preco": 30,
+        "categoria": "Roupas",
+        "estoque": 118,
+        "avaliacao": [
+            {
+                "usuario": "Adalberto",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Logitech G Pro X Superlight Wireless Mouse",
+        "preco": 50,
+        "categoria": "Perifericos",
+        "estoque": 176,
+        "avaliacao": [
+            {
+                "usuario": "Baldasso",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "LG UltraGear 34GP83A-B Ultrawide Monitor",
+        "preco": 800,
+        "categoria": "Escritorio",
+        "estoque": 116,
+        "avaliacao": [
+            {
+                "usuario": "Daniela",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "LG UltraGear 34GP83A-B Ultrawide Monitor",
+        "preco": 800,
+        "categoria": "Escritorio",
+        "estoque": 198,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Logitech G Pro X Superlight Wireless Mouse",
+        "preco": 50,
+        "categoria": "Perifericos",
+        "estoque": 138,
+        "avaliacao": [
+            {
+                "usuario": "Adalberto",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Kingston Fury Beast 16GB DDR4 RAM",
+        "preco": 80,
+        "categoria": "Saude",
+        "estoque": 197,
+        "avaliacao": [
+            {
+                "usuario": "Daniela",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair iCUE 4000X RGB Case",
+        "preco": 30,
+        "categoria": "Roupas",
+        "estoque": 157,
+        "avaliacao": [
+            {
+                "usuario": "Mariana",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Samsung Odyssey G7 27-inch Gaming Monitor",
+        "preco": 500,
+        "categoria": "Pet",
+        "estoque": 76,
+        "avaliacao": [
+            {
+                "usuario": "Gustavo",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair Vengeance RGB Pro 32GB DDR4 RAM",
+        "preco": 75,
+        "categoria": "Esportes",
+        "estoque": 185,
+        "avaliacao": [
+            {
+                "usuario": "Mariana",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair Vengeance RGB Pro 32GB DDR4 RAM",
+        "preco": 75,
+        "categoria": "Esportes",
+        "estoque": 195,
+        "avaliacao": [
+            {
+                "usuario": "Gustavo",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Logitech G Pro X Superlight Wireless Mouse",
+        "preco": 50,
+        "categoria": "Perifericos",
+        "estoque": 174,
+        "avaliacao": [
+            {
+                "usuario": "Daniela",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair Vengeance RGB Pro 32GB DDR4 RAM",
+        "preco": 75,
+        "categoria": "Esportes",
+        "estoque": 56,
+        "avaliacao": [
+            {
+                "usuario": "Baldasso",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair Vengeance RGB Pro 32GB DDR4 RAM",
+        "preco": 75,
+        "categoria": "Esportes",
+        "estoque": 14,
+        "avaliacao": [
+            {
+                "usuario": "Daniela",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Logitech G Pro X Superlight Wireless Mouse",
+        "preco": 50,
+        "categoria": "Perifericos",
+        "estoque": 147,
+        "avaliacao": [
+            {
+                "usuario": "Gustavo",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Samsung Odyssey G7 27-inch Gaming Monitor",
+        "preco": 500,
+        "categoria": "Pet",
+        "estoque": 30,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Kingston Fury Beast 16GB DDR4 RAM",
+        "preco": 80,
+        "categoria": "Saude",
+        "estoque": 66,
+        "avaliacao": [
+            {
+                "usuario": "Baldasso",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Logitech G Pro X Superlight Wireless Mouse",
+        "preco": 50,
+        "categoria": "Perifericos",
+        "estoque": 198,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Samsung Odyssey G7 27-inch Gaming Monitor",
+        "preco": 500,
+        "categoria": "Pet",
+        "estoque": 56,
+        "avaliacao": [
+            {
+                "usuario": "Bruna",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Gustavo",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair iCUE 4000X RGB Case",
+        "preco": 30,
+        "categoria": "Roupas",
+        "estoque": 5,
+        "avaliacao": [
+            {
+                "usuario": "Mariana",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair Vengeance RGB Pro 32GB DDR4 RAM",
+        "preco": 75,
+        "categoria": "Esportes",
+        "estoque": 193,
+        "avaliacao": [
+            {
+                "usuario": "Gustavo",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Razer DeathAdder V3 Pro Mouse",
+        "preco": 100,
+        "categoria": "Tecnologia",
+        "estoque": 186,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "NZXT H510 Mid Tower Case",
+        "preco": 1000,
+        "categoria": "Moveis",
+        "estoque": 30,
+        "avaliacao": [
+            {
+                "usuario": "Ferraz",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 63,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "HyperX Alloy Origins Core Mechanical Keyboard",
+        "preco": 300,
+        "categoria": "Limpeza",
+        "estoque": 68,
+        "avaliacao": [
+            {
+                "usuario": "Mariana",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Gustavo",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 45,
+        "avaliacao": [
+            {
+                "usuario": "Bruna",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Razer DeathAdder V3 Pro Mouse",
+        "preco": 100,
+        "categoria": "Tecnologia",
+        "estoque": 118,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "LG UltraGear 34GP83A-B Ultrawide Monitor",
+        "preco": 800,
+        "categoria": "Escritorio",
+        "estoque": 79,
+        "avaliacao": [
+            {
+                "usuario": "Daniela",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Gustavo",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Kingston Fury Beast 16GB DDR4 RAM",
+        "preco": 80,
+        "categoria": "Saude",
+        "estoque": 51,
+        "avaliacao": [
+            {
+                "usuario": "Baldasso",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 75,
+        "avaliacao": [
+            {
+                "usuario": "Alan Patrick",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Razer DeathAdder V3 Pro Mouse",
+        "preco": 100,
+        "categoria": "Tecnologia",
+        "estoque": 68,
+        "avaliacao": [
+            {
+                "usuario": "Daniela",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair Vengeance RGB Pro 32GB DDR4 RAM",
+        "preco": 75,
+        "categoria": "Esportes",
+        "estoque": 97,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair iCUE 4000X RGB Case",
+        "preco": 30,
+        "categoria": "Roupas",
+        "estoque": 126,
+        "avaliacao": [
+            {
+                "usuario": "Bruna",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Gustavo",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Logitech G Pro X Superlight Wireless Mouse",
+        "preco": 50,
+        "categoria": "Perifericos",
+        "estoque": 160,
+        "avaliacao": [
+            {
+                "usuario": "Baldasso",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair iCUE 4000X RGB Case",
+        "preco": 30,
+        "categoria": "Roupas",
+        "estoque": 49,
+        "avaliacao": [
+            {
+                "usuario": "Bruna",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "NZXT H510 Mid Tower Case",
+        "preco": 1000,
+        "categoria": "Moveis",
+        "estoque": 6,
+        "avaliacao": [
+            {
+                "usuario": "Baldasso",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Kingston Fury Beast 16GB DDR4 RAM",
+        "preco": 80,
+        "categoria": "Saude",
+        "estoque": 106,
+        "avaliacao": [
+            {
+                "usuario": "Gustavo",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "LG UltraGear 34GP83A-B Ultrawide Monitor",
+        "preco": 800,
+        "categoria": "Escritorio",
+        "estoque": 61,
+        "avaliacao": [
+            {
+                "usuario": "Mariana",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 84,
+        "avaliacao": [
+            {
+                "usuario": "Baldasso",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Razer DeathAdder V3 Pro Mouse",
+        "preco": 100,
+        "categoria": "Tecnologia",
+        "estoque": 77,
+        "avaliacao": [
+            {
+                "usuario": "Ferraz",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Daniela",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair iCUE 4000X RGB Case",
+        "preco": 30,
+        "categoria": "Roupas",
+        "estoque": 188,
+        "avaliacao": [
+            {
+                "usuario": "Bruna",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 85,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Ferraz",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "NZXT H510 Mid Tower Case",
+        "preco": 1000,
+        "categoria": "Moveis",
+        "estoque": 108,
+        "avaliacao": [
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Mariana",
+                "nota": 3,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair iCUE 4000X RGB Case",
+        "preco": 30,
+        "categoria": "Roupas",
+        "estoque": 114,
+        "avaliacao": [
+            {
+                "usuario": "Bruna",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "NZXT H510 Mid Tower Case",
+        "preco": 1000,
+        "categoria": "Moveis",
+        "estoque": 88,
+        "avaliacao": [
+            {
+                "usuario": "Bruna",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Baldasso",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Adalberto",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "HyperX Alloy Origins Core Mechanical Keyboard",
+        "preco": 300,
+        "categoria": "Limpeza",
+        "estoque": 194,
+        "avaliacao": [
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 98,
+        "avaliacao": [
+            {
+                "usuario": "Alan Patrick",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Fernanda",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Bruna",
+                "nota": 1,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Samsung Odyssey G7 27-inch Gaming Monitor",
+        "preco": 500,
+        "categoria": "Pet",
+        "estoque": 43,
+        "avaliacao": [
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair Vengeance RGB Pro 32GB DDR4 RAM",
+        "preco": 75,
+        "categoria": "Esportes",
+        "estoque": 121,
+        "avaliacao": [
+            {
+                "usuario": "Carlos Eduardo",
+                "nota": 2,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "usuario": "Alan Patrick",
+                "nota": 5,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "Corsair K95 RGB Platinum Mechanical Keyboard",
+        "preco": 200,
+        "categoria": "Alimentacao",
+        "estoque": 62,
+        "avaliacao": [
+            {
+                "usuario": "Fernanda",
+                "nota": 4,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    },
+    {
+        "nome": "LG UltraGear 34GP83A-B Ultrawide Monitor",
+        "preco": 800,
+        "categoria": "Escritorio",
+        "estoque": 119,
+        "avaliacao": [
+            {
+                "usuario": "Alan Patrick",
+                "nota": 0,
+                "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    }
+]);
+
+// 2. Buscar por produtos com valores maiores que a média.
+use('produto');
+
+// db.getCollection('lojinha').find();
+db.getCollection('lojinha').aggregate([
+  // Etapa 1: $setWindowFields
+  // Adiciona um campo 'avgPreco' a cada documento com a média de todos os preços da coleção.
+  // 'partitionBy: null' significa que a média é calculada globalmente (não por grupos).
+  {
+    $setWindowFields: {
+      partitionBy: null,
+      output: { avgPreco: { $avg: "$preco" } }
+    }
+  },
+
+  // Etapa 2: $match
+  // Filtra os documentos onde o campo 'preco' é maior que o 'avgPreco' calculado.
+  // Usa $expr para comparar campos dentro do documento.
+  {
+    $match: {
+      $expr: { $gt: ["$preco", "$avgPreco"] }
+    }
+  }
+]);
+
+// 3. Atualizar 5 produtos com a média.
+use('produto');
+
+db.getCollection('lojinha').find().limit(5)
+
+db.getCollection('produtos').updateMany([
+  db.getCollection('lojinha').find().limit(5),
+  { $set: { $gt: ["$preco", "$avgPreco"] } }
+])
+
+// 4. Deletar produtos com uma avaliação.
+// Insert a few documents into the sales collection.
