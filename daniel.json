@@ -1,0 +1,13 @@
+{
+
+    "id": 456,
+    "nome": "Daniel Rodrigues",
+    "cidade": "Porto Alegre",
+    "hobbies": [
+        "Futebol",
+        "Cozinhar",
+        "Video Games"
+    ],
+    "ativo": true
+
+}

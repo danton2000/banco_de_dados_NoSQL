@@ -1,0 +1,22 @@
+{
+
+    "id": 456,
+    "nome": "Danton Rodrigues",
+    "idade": 26,
+    "endereco": {
+        "bairro": "Tristeza",
+        "cidade": "Porto Alegre",
+        "CEP": 91751000
+    },
+    "filmes":[
+        {
+            "nome": "Star Wars IV",
+            "genero": "Ficção"
+        },
+        {
+            "nome": "Star Wars V",
+            "genero": "Ficção"
+        }
+    ]
+
+}
