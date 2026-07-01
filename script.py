@@ -50,7 +50,7 @@ lista_usuarios = [
 
 lista_produtos = []
 
-for i in range(1, 1000001):
+for i in range(1, 100):
 
     indice_aleatorio = random.randrange(10)
 
@@ -84,5 +84,21 @@ for produto in lista_produtos:
 #print(lista_produtos)
 
 # 4. Salve o resultado em um arquivo .json
-with open('dados.json', 'w', encoding='utf-8') as f:
-    json.dump(lista_produtos, f, ensure_ascii=False, indent=4)
+# with open('dados.json', 'w', encoding='utf-8') as f:
+#     json.dump(lista_produtos, f, ensure_ascii=False, indent=4)
+
+# 4. Gerar em CSV
+import csv
+with open('produtos.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    fieldnames = ['nome', 'preco', 'categoria', 'estoque', 'avaliacao']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for produto in lista_produtos:
+        writer.writerow({
+            'nome': produto['nome'],
+            'preco': produto['preco'],
+            'categoria': produto['categoria'],
+            'estoque': produto['estoque'],
+            'avaliacao': json.dumps(produto['avaliacao'], ensure_ascii=False)
+        })
