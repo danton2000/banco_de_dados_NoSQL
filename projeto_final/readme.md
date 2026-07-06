@@ -120,3 +120,15 @@ python app.py
 Demonstrar a utilização conjunta de dois bancos de dados NoSQL em uma aplicação prática.
 
 O MongoDB será responsável pelo armazenamento documental das informações dos jogos, enquanto o Redis será utilizado para armazenamento temporário, cache de consultas e rankings, explorando as características e vantagens de cada tecnologia.
+
+## Levantar os bancos de dados(localmente)
+
+### Redis
+
+Executar os scripts local
+"C:\Users\danto\Downloads\Redis-8.8.0-Windows-x64-cygwin-with-Service\start.bat"
+
+"C:\Users\danto\Downloads\Redis-8.8.0-Windows-x64-cygwin-with-Service\redis-cli.exe"
+
+### MongoDB
+Ja esta levantando automaticamente
