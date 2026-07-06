@@ -130,5 +130,8 @@ Executar os scripts local
 
 "C:\Users\danto\Downloads\Redis-8.8.0-Windows-x64-cygwin-with-Service\redis-cli.exe"
 
+(consultas, listas fica para o REDIS !)
+
 ### MongoDB
 Ja esta levantando automaticamente
+
