@@ -1,16 +1,22 @@
+# importação de funções do módulo mongo_crud que serão utilizadas no menu
 from mongo_crud import (
     inserir_jogo,
     listar_jogos,
     buscar_por_appid,
     buscar_por_nome,
-    buscar_por_desenvolvedora,
-    listar_jogos_gratis,
     atualizar_jogo,
-    deletar_jogo,
-    listar_jogos_mais_caros,
-    listar_jogos_mais_positivos
+    deletar_jogo
 )
 
+# Importação de funções do módulo redis_service que serão utilizadas no menu
+from redis_service import (
+    gerar_rankings,
+    listar_jogos_mais_positivos,
+    listar_jogos_mais_negativos,
+    listar_jogos_mais_caros,
+    listar_jogos_mais_baratos,
+    listar_jogos_mais_online
+)
 
 def mostrar_jogo(jogo):
     """Mostra os dados principais de um jogo."""
@@ -56,28 +62,6 @@ def buscar_nome():
     if not jogos:
         print("Nenhum jogo encontrado.")
         return
-
-    for jogo in jogos:
-        mostrar_jogo(jogo)
-
-
-def buscar_desenvolvedora():
-    """Busca jogos por desenvolvedora."""
-    developer = input("Digite o nome da desenvolvedora: ")
-
-    jogos = buscar_por_desenvolvedora(developer)
-
-    if not jogos:
-        print("Nenhum jogo encontrado.")
-        return
-
-    for jogo in jogos:
-        mostrar_jogo(jogo)
-
-
-def listar_gratis():
-    """Lista jogos gratuitos."""
-    jogos = listar_jogos_gratis(10)
 
     for jogo in jogos:
         mostrar_jogo(jogo)
@@ -184,34 +168,83 @@ def deletar():
     else:
         print("Nenhum jogo foi deletado.")
 
-def listar_mais_caros():
-    jogos = listar_jogos_mais_caros()
+def formatar_preco(valor):
+    valor = abs(float(valor))
+    return f"US$ {valor / 100:.2f}"
 
-    for jogo in jogos:
-        mostrar_jogo(jogo)
+def mostrar_ranking(titulo, ranking, tipo=None):
+    print("\n" + titulo)
+    print("-" * 50)
 
-def listar_mais_positivos():
-    jogos = listar_jogos_mais_positivos()
+    if not ranking:
+        print("Ranking vazio. Gere os rankings primeiro.")
+        return
 
-    for jogo in jogos:
-        mostrar_jogo(jogo)
+    for posicao, item in enumerate(ranking, start=1):
+        jogo, pontuacao = item
 
+        if tipo == "preco":
+            pontuacao = formatar_preco(pontuacao)
+
+        print(f"{posicao}. {jogo} - {pontuacao}")
+
+def gerar_rankings_redis():
+    gerar_rankings()
+
+def ranking_positivos():
+    mostrar_ranking(
+        "Jogos com mais avaliações positivas",
+        listar_jogos_mais_positivos(10)
+    )
+
+def ranking_negativos():
+    mostrar_ranking(
+        "Jogos com mais avaliações negativas",
+        listar_jogos_mais_negativos(10)
+    )
+
+def ranking_caros():
+    mostrar_ranking(
+        "Jogos mais caros",
+        listar_jogos_mais_caros(10),
+        tipo="preco"
+    )
+
+def ranking_baratos():
+    mostrar_ranking(
+        "Jogos mais baratos",
+        listar_jogos_mais_baratos(10),
+        tipo="preco"
+    )
+
+def ranking_online():
+    mostrar_ranking(
+        "Jogos com mais jogadores online",
+        listar_jogos_mais_online(10)
+    )
 
 def menu():
     """Menu principal da aplicação."""
     while True:
-        print("\n===== STEAM GAMES - MONGODB CRUD =====")
+        print("\n===== STEAM GAMES - NOSQL =====")
+
+        print("\n--- MongoDB CRUD ---")
         print("1 - Listar jogos")
         print("2 - Buscar jogo por AppID")
         print("3 - Buscar jogo por nome")
-        print("4 - Buscar jogos por desenvolvedora")
-        print("5 - Listar jogos grátis")
-        print("6 - Adicionar novo jogo")
-        print("7 - Atualizar jogo")
-        print("8 - Deletar jogo")
-        print("9 - Listar jogos mais caros")
-        print("10 - Listar jogos com mais avaliações positivas")
-        print("0 - Sair")
+        print("4 - Adicionar novo jogo")
+        print("5 - Atualizar jogo")
+        print("6 - Deletar jogo")
+
+        print("\n--- Redis Rankings ---")
+        print("7 - Gerar rankings no Redis")
+        print("8 - Ranking jogos mais positivos")
+        print("9 - Ranking jogos mais negativos")
+        print("10 - Ranking jogos mais caros")
+        print("11 - Ranking jogos mais baratos")
+        print("12 - Ranking jogos com mais jogadores online")
+
+        print("\n0 - Sair")
 
         opcao = input("Escolha uma opção: ")
 
@@ -222,19 +255,23 @@ def menu():
         elif opcao == "3":
             buscar_nome()
         elif opcao == "4":
-            buscar_desenvolvedora()
-        elif opcao == "5":
-            listar_gratis()
-        elif opcao == "6":
             adicionar()
-        elif opcao == "7":
+        elif opcao == "5":
             atualizar()
-        elif opcao == "8":
+        elif opcao == "6":
             deletar()
+        elif opcao == "7":
+            gerar_rankings_redis()
+        elif opcao == "8":
+            ranking_positivos()
         elif opcao == "9":
-            listar_mais_caros()
+            ranking_negativos()
         elif opcao == "10":
-            listar_mais_positivos()
+            ranking_caros()
+        elif opcao == "11":
+            ranking_baratos()
+        elif opcao == "12":
+            ranking_online()
         elif opcao == "0":
             print("Encerrando aplicação...")
             break
